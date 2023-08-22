@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/e40c19f515.js" crossorigin="anonymous"></script>
     <title>Data Table</title>
 </head>
-<body>
+<body><section>
 <section id="data1">
     <table class="table" id="data3">
         <tr class="first">
@@ -121,16 +121,6 @@
                 <th>Salary</th>
             </tr>
         </tfoot>
-    </table>
-    <table class="table1">
-        <tr>
-            <td><button type="submit" id="clickButton1">Previous</button>
-            <button type="submit" id="clickButton2">1</button>
-            <button type="submit" id="clickButton3">2</button>
-            <button type="submit" id="clickButton4">3</button>
-            <button type="submit" id="clickButton5">4</button>
-            <button type="submit" id="clickButton">Next</button></td>
-        </tr>
     </table>
 </section>
 
@@ -355,7 +345,125 @@
         </tfoot>
     </table>
 </section>
-
+<section id="data5">
+    <table class="table">
+        <tr class="first">
+            <td>Show<select>
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+            </select>entries</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="search-type">Search:</td>
+            <td class="search"><input id="searchbar" onkeyup="search_alphabet()" type="text"></td>
+        </tr>
+        <tr>
+            <th width="10%">Seq<i class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Name<i class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Position<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Office<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Start Date<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Salary<i class="fa-solid fa-up-down"></i></th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Michelle House</td>
+            <td>Integration Specialist</td>
+            <td>Sydney</td>
+            <td>2011-06-02</td>
+            <td>$95,400</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Suki Burks</td>
+            <td>Developer</td>
+            <td>London</td>
+            <td>2009-10-22</td>
+            <td>$114,500</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Prescott Bartlett</td>
+            <td>Technical Author</td>
+            <td>London</td>
+            <td>2011-05-07</td>
+            <td>$145,000</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Gavin Cortez</td>
+            <td>Team Leader</td>
+            <td>San Francisco</td>
+            <td>2008-10-26</td>
+            <td>$235,500</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Martena Mccray</td>
+            <td>Post-Sales support</td>
+            <td>Edinburgh</td>
+            <td>2011-03-09</td>
+            <td>$324,050</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Unity Butler</td>
+            <td>Marketing Designer</td>
+            <td>San Francisco</td>
+            <td>2009-12-09</td>
+            <td>$85,675</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Howard Hatfield</td>
+            <td>Office Manager</td>
+            <td>San Francisco</td>
+            <td>2008-12-16</td>
+            <td>$164,500</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Hope Fuentes</td>
+            <td>Secretary</td>
+            <td>San Francisco</td>
+            <td>2010-02-12</td>
+            <td>$109,850</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Vivian Harrell</td>
+            <td>Financial Controller</td>
+            <td>San Francisco</td>
+            <td>2009-02-14</td>
+            <td>$452,500</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Vivian Harrell</td>
+            <td>Financial Controller</td>
+            <td>San Francisco</td>
+            <td>2009-02-14</td>
+            <td>$452,500</td>
+        </tr>
+        </tfoot>
+    </table>
+</section>
+<section id="table1">
+<table class="table1">
+    <tr>
+        <td><button type="submit" id="clickButton1">Previous</button>
+        <button type="submit" id="clickButton2">1</button>
+        <button type="submit" id="clickButton3">2</button>
+        <button type="submit" id="clickButton4">3</button>
+        <button type="submit" id="clickButton5">4</button>
+        <button type="submit" id="clickButton">Next</button></td>
+    </tr>
+</table>
+</section>
+</section>
 <script>
 var data2 = document.getElementById("data2");
 var clickButton = document.getElementById("clickButton");
@@ -370,11 +478,13 @@ clickButton.onclick = function() {
       data2.style.display = "block";
       data3.style.display = "none";
       data4.style.display = "none";
+      data5.style.display = "none";
     } 
     else {
       data3.style.display = "block";
       data2.style.display = "none";
       data4.style.display = "none";
+      data5.style.display = "none";
   }
 };
 </script>
@@ -392,11 +502,13 @@ clickButton.onclick = function() {
           data3.style.display = "block";
           data2.style.display = "none";
           data4.style.display = "none";
+          data5.style.display = "none";
         } 
         else {
           data2.style.display = "block";
           data3.style.display = "none";
           data4.style.display = "none";
+          data5.style.display = "none";
       }
     };
     </script>
@@ -414,6 +526,8 @@ clickButton.onclick = function() {
               data3.style.display = "block";
               data2.style.display = "none";
               data4.style.display = "none";
+              data5.style.display = "none";
+              
             } 
         };
     </script>
@@ -431,6 +545,7 @@ clickButton.onclick = function() {
               data3.style.display = "none";
               data2.style.display = "block";
               data4.style.display = "none";
+              data5.style.display = "none";
             } 
         };
     </script>
@@ -448,11 +563,30 @@ clickButton.onclick = function() {
               data4.style.display = "block";
               data2.style.display = "none";
               data3.style.display = "none";
+              data5.style.display = "none";
             } 
         };
     </script>
-
+    <script>
+        var data2 = document.getElementById("data2");
+        var clickButton5 = document.getElementById("clickButton5");
+        var data3 = document.getElementById("data3");
+        var data4 = document.getElementById("data4");
+        var data5 = document.getElementById("data5");
+        var clickCount = 0;
+        
+        clickButton5.onclick = function() {
+          clickCount++;
+        
+          if (clickCount % 2 === 1) {
+              data4.style.display = "none";
+              data2.style.display = "none";
+              data3.style.display = "none";
+              data5.style.display = "block";
+            } 
+        };
     </script>
+    
     <script>
         function search_alphabet() {
     let input = document.getElementById('searchbar').value

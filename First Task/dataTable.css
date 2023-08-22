@@ -60,18 +60,20 @@
 #data2 .first .search-type{
     padding-left: 130px;
 }
-#data1 .table1 td {
-   text-align:right;
-   margin-right: 20px;
+#table1 .table1 tr td {
+   text-align: right;
    border: white;
+   margin-right: 0;
 }
-#data1 .table1 td button{
+#table1 .table1 td button{
     padding: 8px;
     margin-right: 10px;
     border-color: white;
     margin-top: 20px;
+    text-align: right;
 }
-#data1 .table1 td button:hover{
+
+#table1 .table1 td button:hover{
     border-color: white;
     background-color: black;
     color: white;
@@ -106,5 +108,37 @@
     padding-left: 20px;
 }
 #data4 .first .search-type{
+    padding-left: 130px;
+}
+#data5{
+    display: none;
+}
+#data5 table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #data5  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  #data5 tr:nth-child(odd) {
+    background-color: rgba(228,227,228,0.4);
+
+  }
+  #data5 table th,td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+  }
+  #data5 table .first{
+    background-color: white;
+}
+
+#data5 table i{
+    opacity: 0.4;
+    padding-left: 20px;
+}
+#data5 .first .search-type{
     padding-left: 130px;
 }
