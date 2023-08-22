@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dataTable.css">
+    <script src="https://kit.fontawesome.com/e40c19f515.js" crossorigin="anonymous"></script>
+    <title>Data Table</title>
+</head>
+<body><section>
+<section id="data1">
+    <table class="table" id="data3">
+        <tr class="first">
+            <td>Show<select>
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+            </select>entries</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="search-type">Search:</td>
+            <td class="search"><input id="searchbar" onkeyup="search_alphabet()" type="text"></td>
+        </tr>
+        <tr>
+            <th width="10%">Seq<i id="clickButton6" class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Name<i id="clickButton7" class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Position<i id="clickButton8" class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Office<i id="clickButton9" class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Start Date<i id="clickButton10" class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Salary<i id="clickButton11" class="fa-solid fa-up-down"></i></th>
+        </tr>
+        <tr>
+            <td class="letters">1</td>
+            <td class="letters">Shou lton</td>
+            <td class="letters">Regional Marketing</td>
+            <td class="letters">Tokyo</td>
+            <td class="letters">2011-08-14</td>
+            <td class="letters">$163,000</td>
+        </tr>
+        <tr>
+            <td class="letters">2</td>
+            <td class="letters">Tiger Nixon</td>
+            <td class="letters">System Architect</td>
+            <td class="letters">Edinburgh</td>
+            <td class="letters">2011-04-25</td>
+            <td class="letters">$320,800</td>
+        </tr>
+        <tr>
+            <td class="letters">3</td>
+            <td class="letters">Bruno Nash</td>
+            <td class="letters">Software Engineer</td>
+            <td class="letters">London</td>
+            <td class="letters">2011-05-03</td>
+            <td class="letters">$163,500</td>
+        </tr>
+        <tr>
+            <td class="letters">4</td>
+            <td class="letters">Olivia Liang</td>
+            <td class="letters">Support Engineer</td>
+            <td class="letters">Singapore</td>
+            <td class="letters">2011-02-03</td>
+            <td class="letters">$234,500</td>
+        </tr>
+        <tr>
+            <td class="letters">5</td>
+            <td class="letters">Gavin Joyce</td>
+            <td class="letters">Developer</td>
+            <td class="letters">Edinburgh</td>
+            <td class="letters">2010-12-22</td>
+            <td class="letters">$92,575</td>
+        </tr>
+        <tr>
+            <td class="letters">6</td>
+            <td class="letters">Ashton Cox</td>
+            <td class="letters">Junior Technical Author</td>
+            <td class="letters">San Francisco</td>
+            <td class="letters">2009-01-12</td>
+            <td class="letters">$86,000</td>
+        </tr>
+        <tr>
+            <td class="letters">7</td>
+            <td class="letters">Fiona Green</td>
+            <td class="letters">Chief Operating Officer (COO)</td>
+            <td class="letters">San Francisco</td>
+            <td class="letters">2010-03-11</td>
+            <td class="letters">$850,000</td>
+        </tr>
+        <tr>
+            <td class="letters">8</td>
+            <td class="letters">Martena Mccray</td>
+            <td class="letters">Post-Sales support</td>
+            <td class="letters">Edinburgh</td>
+            <td class="letters">2011-03-09</td>
+            <td class="letters">$324,050</td>
+        </tr>
+        <tr>
+            <td class="letters">9</td>
+            <td class="letters">Hermione Butter</td>
+            <td class="letters">Regional Director</td>
+            <td class="letters">London</td>
+            <td class="letters">2011-03-21</td>
+            <td class="letters">$356,250</td>
+        </tr>
+        <tr>
+            <td class="letters">10</td>
+            <td class="letters">Finn Butter</td>
+            <td class="letters">Support Engineer</td>
+            <td class="letters">San Francisco</td>
+            <td class="letters">2009-07-07</td>
+            <td class="letters">$87,500</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th>Seq.</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section id="data2">
+    <table class="table">
+        <tr class="first">
+            <td>Show<select>
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+            </select>entries</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="search-type">Search:</td>
+            <td class="search"><input id="searchbar" onkeyup="search_alphabet()" type="text"></td>
+        </tr>
+        <tr>
+            <th width="10%">Seq<i class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Name<i class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Position<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Office<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Start Date<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Salary<i class="fa-solid fa-up-down"></i></th>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Zorita Serrano</td>
+            <td>Software Engineer</td>
+            <td>San Francisco</td>
+            <td>2012-06-01</td>
+            <td>$115,000</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Jennifer Acosta</td>
+            <td>Junior Javascript Developer</td>
+            <td>Edinburgh</td>
+            <td>2013-02-01</td>
+            <td>$75,650</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Cara Stevens</td>
+            <td>Sales Assistant</td>
+            <td>New York</td>
+            <td>2011-12-06</td>
+            <td>$145,600</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Hermione Butler</td>
+            <td>Regional Director</td>
+            <td>London</td>
+            <td>2011-03-21</td>
+            <td>$356,250</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Lael Greer</td>
+            <td>Systems Administrator</td>
+            <td>London</td>
+            <td>2009-02-27</td>
+            <td>$103,500</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Jonas Alexander</td>
+            <td>Developer</td>
+            <td>San Francisco</td>
+            <td>2010-07-14</td>
+            <td>$86,500</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Shad Decker</td>
+            <td>Regional Director</td>
+            <td>Edinburgh</td>
+            <td>2008-11-13</td>
+            <td>$183,000</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Michael Bruce</td>
+            <td>Javascript Developer</td>
+            <td>Singapore</td>
+            <td>2011-06-27</td>
+            <td>$183,000</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Donna Snider</td>
+            <td>Customer Support</td>
+            <td>New York</td>
+            <td>2011-01-25</td>
+            <td>$112,000</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Donna Snider</td>
+            <td>Customer Support</td>
+            <td>New York</td>
+            <td>2011-01-25</td>
+            <td>$112,000</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th>Seq.</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+<section id="data4">
+    <table class="table">
+        <tr class="first">
+            <td>Show<select>
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+            </select>entries</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="search-type">Search:</td>
+            <td class="search"><input id="searchbar" onkeyup="search_alphabet()" type="text"></td>
+        </tr>
+        <tr>
+            <th width="10%">Seq<i class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Name<i class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Position<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Office<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Start Date<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Salary<i class="fa-solid fa-up-down"></i></th>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Ashton Cox</td>
+            <td>Junior Technical Author</td>
+            <td>San Francisco</td>
+            <td>2009-01-12</td>
+            <td>$86,000</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Cedric Kelly</td>
+            <td>Senior Javascript Developer</td>
+            <td>Edinburgh</td>
+            <td>2012-03-29</td>
+            <td>$433,060</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Airi Satou</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>2008-11-28</td>
+            <td>$162,700</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Ashton Cox</td>
+            <td>Junior Technical Author</td>
+            <td>San Francisco</td>
+            <td>2009-01-12</td>
+            <td>$86,000</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Cedric Kelly</td>
+            <td>Senior Javascript Developer</td>
+            <td>Edinburgh</td>
+            <td>2012-03-29</td>
+            <td>$433,060</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Airi Satou</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>2008-11-28</td>
+            <td>$162,700</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Ashton Cox</td>
+            <td>Junior Technical Author</td>
+            <td>San Francisco</td>
+            <td>2009-01-12</td>
+            <td>$86,000</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Cedric Kelly</td>
+            <td>Senior Javascript Developer</td>
+            <td>Edinburgh</td>
+            <td>2012-03-29</td>
+            <td>$433,060</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Airi Satou</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>2008-11-28</td>
+            <td>$162,700</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Airi Satou</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>2008-11-28</td>
+            <td>$162,700</td>
+        </tr>
+        </tfoot>
+    </table>
+</section>
+<section id="data5">
+    <table class="table">
+        <tr class="first">
+            <td>Show<select>
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+            </select>entries</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="search-type">Search:</td>
+            <td class="search"><input id="searchbar" onkeyup="search_alphabet()" type="text"></td>
+        </tr>
+        <tr>
+            <th width="10%">Seq<i class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Name<i class="fa-solid fa-up-down"></i></th>
+            <th width="20%">Position<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Office<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Start Date<i class="fa-solid fa-up-down"></i></th>
+            <th width="15%">Salary<i class="fa-solid fa-up-down"></i></th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Michelle House</td>
+            <td>Integration Specialist</td>
+            <td>Sydney</td>
+            <td>2011-06-02</td>
+            <td>$95,400</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Suki Burks</td>
+            <td>Developer</td>
+            <td>London</td>
+            <td>2009-10-22</td>
+            <td>$114,500</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Prescott Bartlett</td>
+            <td>Technical Author</td>
+            <td>London</td>
+            <td>2011-05-07</td>
+            <td>$145,000</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Gavin Cortez</td>
+            <td>Team Leader</td>
+            <td>San Francisco</td>
+            <td>2008-10-26</td>
+            <td>$235,500</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Martena Mccray</td>
+            <td>Post-Sales support</td>
+            <td>Edinburgh</td>
+            <td>2011-03-09</td>
+            <td>$324,050</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Unity Butler</td>
+            <td>Marketing Designer</td>
+            <td>San Francisco</td>
+            <td>2009-12-09</td>
+            <td>$85,675</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Howard Hatfield</td>
+            <td>Office Manager</td>
+            <td>San Francisco</td>
+            <td>2008-12-16</td>
+            <td>$164,500</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Hope Fuentes</td>
+            <td>Secretary</td>
+            <td>San Francisco</td>
+            <td>2010-02-12</td>
+            <td>$109,850</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Vivian Harrell</td>
+            <td>Financial Controller</td>
+            <td>San Francisco</td>
+            <td>2009-02-14</td>
+            <td>$452,500</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Vivian Harrell</td>
+            <td>Financial Controller</td>
+            <td>San Francisco</td>
+            <td>2009-02-14</td>
+            <td>$452,500</td>
+        </tr>
+        </tfoot>
+    </table>
+</section>
+<section id="table1">
+<table class="table1">
+    <tr>
+        <td><button type="submit" id="clickButton1">Previous</button>
+        <button type="submit" id="clickButton2">1</button>
+        <button type="submit" id="clickButton3">2</button>
+        <button type="submit" id="clickButton4">3</button>
+        <button type="submit" id="clickButton5">4</button>
+        <button type="submit" id="clickButton">Next</button></td>
+    </tr>
+</table>
+</section>
+</section>
+
+<script>
+var data2 = document.getElementById("data2");
+var clickButton = document.getElementById("clickButton");
+var data3 = document.getElementById("data3");
+var data4 = document.getElementById("data4");
+var clickCount = 0;
+
+clickButton.onclick = function() {
+  clickCount++;
+
+  if (clickCount % 2 === 1) {
+      data2.style.display = "block";
+      data3.style.display = "none";
+      data4.style.display = "none";
+      data5.style.display = "none";
+    } 
+    else {
+      data3.style.display = "block";
+      data2.style.display = "none";
+      data4.style.display = "none";
+      data5.style.display = "none";
+  }
+};
+</script>
+<script>
+    var data2 = document.getElementById("data2");
+    var clickButton1 = document.getElementById("clickButton1");
+    var data3 = document.getElementById("data3");
+    var data4 = document.getElementById("data4");
+    var clickCount = 0;
+    
+    clickButton1.onclick = function() {
+      clickCount++;
+    
+      if (clickCount % 2 === 1) {
+          data3.style.display = "block";
+          data2.style.display = "none";
+          data4.style.display = "none";
+          data5.style.display = "none";
+        } 
+        else {
+          data2.style.display = "block";
+          data3.style.display = "none";
+          data4.style.display = "none";
+          data5.style.display = "none";
+      }
+    };
+    </script>
+    <script>
+        var data2 = document.getElementById("data2");
+        var clickButton2 = document.getElementById("clickButton2");
+        var data3 = document.getElementById("data3");
+        var data4 = document.getElementById("data4");
+        var clickCount = 0;
+        
+        clickButton2.onclick = function() {
+          clickCount++;
+        
+          if (clickCount % 2 === 1) {
+              data3.style.display = "block";
+              data2.style.display = "none";
+              data4.style.display = "none";
+              data5.style.display = "none";
+              
+            } 
+        };
+    </script>
+    <script>
+        var data2 = document.getElementById("data2");
+        var clickButton3 = document.getElementById("clickButton3");
+        var data3 = document.getElementById("data3");
+        var data4 = document.getElementById("data4");
+        var clickCount = 0;
+        
+        clickButton3.onclick = function() {
+          clickCount++;
+        
+          if (clickCount % 2 === 1) {
+              data3.style.display = "none";
+              data2.style.display = "block";
+              data4.style.display = "none";
+              data5.style.display = "none";
+            } 
+        };
+    </script>
+    <script>
+        var data2 = document.getElementById("data2");
+        var clickButton4 = document.getElementById("clickButton4");
+        var data3 = document.getElementById("data3");
+        var data4 = document.getElementById("data4");
+        var clickCount = 0;
+        
+        clickButton4.onclick = function() {
+          clickCount++;
+        
+          if (clickCount % 2 === 1) {
+              data4.style.display = "block";
+              data2.style.display = "none";
+              data3.style.display = "none";
+              data5.style.display = "none";
+            } 
+        };
+    </script>
+    <script>
+        var data2 = document.getElementById("data2");
+        var clickButton5 = document.getElementById("clickButton5");
+        var data3 = document.getElementById("data3");
+        var data4 = document.getElementById("data4");
+        var data5 = document.getElementById("data5");
+        var clickCount = 0;
+        
+        clickButton5.onclick = function() {
+          clickCount++;
+        
+          if (clickCount % 2 === 1) {
+              data4.style.display = "none";
+              data2.style.display = "none";
+              data3.style.display = "none";
+              data5.style.display = "block";
+            } 
+        };
+    </script>
+    
+    <script>
+        function search_alphabet() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('letters');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+    }
+    </script>
+</body>
+</html>
