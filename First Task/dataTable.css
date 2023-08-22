@@ -1,0 +1,110 @@
+#data1 table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #data1  th, td {
+    text-align: left;
+    padding: 15px;
+  }
+  
+  #data1 tr:nth-child(odd) {
+    background-color: rgba(228,227,228,0.4);
+
+  }
+  #data1 table th,td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+  }
+  #data1 table .first{
+    background-color: white;
+}
+
+#data1 table i{
+    opacity: 0.4;
+    padding-left: 20px;
+}
+#data1 .first .search-type{
+    padding-left: 130px;
+}
+#data2 {
+    display: none;
+    
+}
+#data2 table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #data2  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  #data2 tr:nth-child(odd) {
+    background-color: rgba(228,227,228,0.4);
+
+  }
+  #data2 table th,td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+  }
+  #data2 table .first{
+    background-color: white;
+}
+
+#data2 table i{
+    opacity: 0.4;
+    padding-left: 20px;
+}
+#data2 .first .search-type{
+    padding-left: 130px;
+}
+#data1 .table1 td {
+   text-align:right;
+   margin-right: 20px;
+   border: white;
+}
+#data1 .table1 td button{
+    padding: 8px;
+    margin-right: 10px;
+    border-color: white;
+    margin-top: 20px;
+}
+#data1 .table1 td button:hover{
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+#data4{
+    display: none;
+}
+#data4 table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #data4  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  #data4 tr:nth-child(odd) {
+    background-color: rgba(228,227,228,0.4);
+
+  }
+  #data4 table th,td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+  }
+  #data4 table .first{
+    background-color: white;
+}
+
+#data4 table i{
+    opacity: 0.4;
+    padding-left: 20px;
+}
+#data4 .first .search-type{
+    padding-left: 130px;
+}
