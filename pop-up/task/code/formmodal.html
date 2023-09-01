@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop-up</title>
+</head>
+<body>
+    
+
+
+<form action="" id="form">
+    <div class="row">
+        <div class="col-md-12">
+            <label for="Website" class="purchaseinfo"><span class="required">*</span> Staff code</label>
+            <input type="text" id="" name="your_name" class="form-control purchaseselects">
+        </div>
+
+        <div class="col-md-12">
+            <label for="Website" class="purchaseinfo mt-2"><span class="required">*</span> Courses Completed</label>
+            <select name="tag" id="" class="selectpicker form-control border-0" data-live-search="true" multiple placeholder="Tags">
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">JavaScript</option>
+                <option value="">Bootstrap</option>
+            </select>
+        </div>
+
+        <div class="col-md-12">
+            <label for="Website" class="purchaseinfo mt-2"><span class="required">*</span> City</label>
+            <select name="search" id="" class="selectpicker form-control border-0" data-live-search="true" multiple>
+                <option value="">Vishakapatnam</option>
+                <option value="">Vijayawada</option>
+                <option value="">Srikakulam</option>
+                <option value="">Rajahmundry</option>
+            </select>
+        </div>
+
+        <div class="modal-footer taskfooter">
+            <button type="button" class="taskclose1" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="tasksave1">Save</button>
+        </div>
+    </div>
+</form>
+
+
+<script>
+    $('#form').formValidation({
+        framework: 'bootstrap',
+        fields: {
+
+
+            your_name: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter your name'
+                    }
+                }
+            },
+            tag: {
+                validators: {
+                    notEmpty: {
+                        message: 'Select courses'
+                    }
+                }
+            },
+            search: {
+                validators: {
+                    notEmpty: {
+                        message: 'Select city'
+                    }
+                }
+            },
+            
+
+        }
+    })
+</script>
+</body>
+</html>
